@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../slika.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    padding:0;
+    display: flex;
+    font-family: serif;
+    text-align: center;
+}
+#izadji
+{
+    border-radius: 10px;
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border:none;
+    box-shadow:
+            0 0 5px #9e5f3b,
+            0 0 5px #e2b093;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'BioRhyme', serif;
+    color: #b2e2f5;
+    background: rgba(90, 37, 6,0.6);
+    font-size:large;
+    margin-right: 10px;
+    margin-top: 1vh;
+    padding:0.5vh;
+}
+#tema
+{
+    text-shadow:2px 2px 2px #8fdede;
+    color: #20cfc9;
+    font-family: 'BioRhyme', serif;
+    font-size:30px;
+    font-style: bold;
+    text-align: center;
+    
+}
+
+.dodavanje_komentara
+{
+    margin:0;
+    padding: 0;
+    width: 200vh;
+    height:100vh;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    color: aqua;
+}
+.textarea
+{
+    border-collapse: collapse;
+    font-size: 1.3rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.42);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    width: 90%;
+    margin-top: 15vh;
+    margin-left: 5%;
+    height: 27vh;
+    color: rgb(90, 205, 221);
+    font-weight: bold;
+    font-family: 'BioRhyme', serif;
+}
+#tema
+{
+    display: flex;
+justify-content: center;
+align-items: center;
+    font-family: 'BioRhyme', serif;
+}
+#teme
+{
+    display: flex;
+justify-content: center;
+align-items: center;
+font-family: consolas;
+}
+.objavi
+{
+    border-radius: 10px;
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border:none;
+    box-shadow:
+            0 0 5px #9e5f3b,
+            0 0 5px #e2b093;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'BioRhyme', serif;
+    color: #b2e2f5;
+    background: rgba(90, 37, 6,0.6);
+    padding-right:10px;
+    font-size:large;
+    margin-right: 10px;
+}
+.tagovi
+{
+    border-radius: 40px;
+    border: none;
+    /*background-color: aqua;*/
+    height: auto;
+}
+#tag
+{
+    background: rgba(225, 165, 131, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border:none;
+    border: none;
+    font-family:'BioRhyme', serif;
+    color:#eee;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

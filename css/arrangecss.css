@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+.logo
+{
+  width:99%;
+  height:auto;
+  align-content: center;
+  text-align: center;
+}
+
+body{
+  background-image: url("../slika.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  padding:0;
+  display: flex;
+  font-family: 'BioRhyme', serif;
+}
+
+/* Float four columns side by side */
+.column
+{
+  float: left;
+  width: 90%;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.container
+{
+
+  margin: 0 -5px;
+  position: relative;
+  justify-content: space-between;
+}
+
+/* Clear floats after the columns */
+.container:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px)
+{
+  .column
+  {
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card
+{
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(3, 46, 115, 0.85);
+  border-radius:16px;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+body::-webkit-scrollbar
+{
+  display: none;
+}
+.container .column .card a
+{
+  color: #a36b4b;
+}
+
+.container .column .card a
+{
+  margin: 10px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 300;
+  padding: 5px;
+  border: none;
+}
+.container .column .card h3
+{
+  font-weight: 600;
+  padding: 5px;
+  color: #e2b093;
+  text-shadow:
+          0 0 7px #5a2506,
+          0 0 10px #5a2506,
+          0 0 21px #5a2506,
+          0 0 42px #b96c3f,
+          0 0 82px #e5c6b6,
+          0 0 92px #c8a38f,
+          0 0 102px #d29f84,
+          0 0 151px #d4a184;
+  text-transform: uppercase;
+
+}
+.container .column .card h3
+{
+
+  padding: 5px;
+}
+.container .column .card p
+{
+  color:#b2e2f5;
+  font-size: large;
+  font-family: 'BioRhyme', serif;
+}
+.login
+{
+  border-radius: 10px;
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border:none;
+  box-shadow:
+          0 0 5px #9e5f3b,
+          0 0 5px #e2b093;
+  text-decoration: none;
+  float: right;
+  font-family: 'BioRhyme', serif;
+  color: #b2e2f5;
+  background: rgba(90, 37, 6,0.6);
+  padding-right:10px;
+  font-size:large;
+}
+.register
+{
+  border-radius: 10px;
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border:none;
+  box-shadow:
+          0 0 5px #9e5f3b,
+          0 0 5px #e2b093;
+  text-decoration: none;
+  float:right;
+  font-family: 'BioRhyme', serif;
+  color: #b2e2f5;
+  background: rgba(90, 37, 6,0.6);
+  padding-right:10px;
+  font-size:large;
+  margin-right: 10px;
+}
+.more
+{
+  border-radius: 10px;
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border:none;
+  box-shadow:
+          0 0 5px #9e5f3b,
+          0 0 5px #e2b093;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'BioRhyme', serif;
+  color: #b2e2f5;
+  background: rgba(90, 37, 6,0.6);
+  padding-right:10px;
+  font-size:large;
+  margin-right: 10px;
+}

@@ -1,0 +1,446 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../slika.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    padding:0;
+    display: flex;
+    font-family: serif;
+    text-align: center;
+}
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
+#tekst
+{
+    font-size:22px;
+    color:#b2e2f5;
+    font-family:'BioRhyme', serif;
+}
+.main
+{
+    overflow-x: hidden;
+    height:auto;
+}
+.filteri
+{
+    width: 100%;
+    height:20%;
+    position: fixed;
+    background-image: linear-gradient(#333,#fff);
+
+}
+.browsers
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: consolas;
+}
+#tag
+{
+    background: rgba(225, 165, 131, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border:none;
+    border: none;
+    font-family:'BioRhyme', serif;
+    color:#eee;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#submit {
+    border-radius: 20px;
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: none;
+    box-shadow: 0 0 5px #9e5f3b,
+    0 0 5px #e2b093;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'BioRhyme', serif;
+    color: #b2e2f5;
+    background: rgba(90, 37, 6, 0.6);
+    padding: 10px;
+    font-size: large;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #3db89f;
+    margin-right: 2px;
+    font-family: 'BioRhyme', serif;
+    z-index: 15;
+}
+#odustani
+{
+    border-radius: 20px;
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border:none;
+    box-shadow:
+            0 0 5px #9e5f3b,
+            0 0 5px #e2b093;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'BioRhyme', serif;
+    color: #b2e2f5;
+    background: rgba(90, 37, 6,0.6);
+    padding:10px;
+    font-size:large;
+}
+#pretraga
+{
+    height:30px;
+    font-size:large;
+    background:#e1a583;
+    color:#333;
+    backdrop-filter: blur(6.5px);
+    padding:10px;
+    border-radius: 20px;
+    border:none;
+    text-align: center;
+    text-shadow: #eee;
+
+}
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(30,48,58,1); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+.open
+{
+    background-size: cover;
+    background-position: center center;
+    color:black;
+    height:10vh;
+    width:10vh;
+    margin-left: -9vh;
+    padding: 20px 50px;
+    border-radius: 10px;
+    text-align: center;
+    position:fixed;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+#myNav
+{
+    background-color: #333;
+    text-align: center;
+    align-items: center;
+}
+.main1
+{
+    width: 100%;
+    height : 8vh;
+    z-index: 5;
+
+}
+.main
+{
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    width: 90%;
+    margin-top: 15vh;
+    margin-left: 5%;
+    height: auto;
+
+}
+.main::-webkit-scrollbar
+{
+    display: none;
+}
+#content
+{
+    text-align: left;
+    font-weight: 300;
+    text-shadow: 5px 5px 5px #532917;
+    color: #73cfc8;
+    margin:1% -5% 1% 10%;
+    align-items: left;
+    font-family: 'BioRhyme', serif;
+    font-size:24px;
+    font-style: bold;
+
+}
+#ime
+{
+    font-size: small;
+    margin-right:2vh;
+    margin-bottom:1vh;
+    text-align:right;
+    font-family:'BioRhyme', serif;
+    color: #532917;
+
+
+}
+.paragraf
+{
+    text-align: left;
+    text-decoration: none;
+    color:#ddd;
+    border:none;
+    margin-right:10%;
+    margin-left:10%;
+    font-family: 'BioRhyme', serif;
+    font-size:14px;
+    margin-top:-17px;
+    height:200px;
+    width:80%;
+    resize:none;
+    background: rgba(255, 255, 255, 0);
+}
+.paragraf::-webkit-scrollbar
+{
+    display: none;
+}
+#ime
+{
+    font-size:14px;
+    text-align:right;
+    font-family:'BioRhyme', serif;
+    color: #b3714c;
+}
+.comment
+{
+    float: left;
+    margin-right: 4vh;
+    margin-bottom: 4vh;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.like
+{
+    border: none;
+    float: left;
+    margin-right: 4vh;
+    margin-left: 4vh;
+    margin-bottom: 6vh;
+    cursor: pointer;
+    background: none;
+
+
+}
+#thumbsup
+{
+    background: none;
+    width:20px;
+    height:20px;
+}
+#commenticon
+{
+
+    width:20px;
+    height:20px;
+}
+.dodaj
+{
+    border: none;
+    text-decoration: none;
+    background:#fff;
+    color:#333;
+    box-shadow: 0 20px 50px rgba(0,0,0,1);
+    font-size: 40px;
+    padding: 0px 20px;
+    border-radius: 200px;
+    position: fixed;
+    margin-top: 88vh;
+    cursor: pointer;
+    display:inline-block;
+}
+@media  screen and(min-width:320px)
+{
+    .dodaj
+    {
+        border: none;
+        text-decoration: none;
+        background:#fff;
+        color:#333;
+        box-shadow: 0 20px 50px rgba(0,0,0,1);
+        font-size: 40px;
+        padding: 0px 20px;
+        border-radius: 20%;
+        position: fixed;
+        margin-top: 88vh;
+        cursor: pointer;
+        display:inline-block;
+    }
+    .paragraf::-webkit-scrollbar
+    {
+        display: none;
+    }
+    .paragraf
+    {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin-right:10%;
+        margin-left:10%;
+        font-family: 'BioRhyme', serif;
+        font-size:20px;
+        margin-top:-17px;
+        resize:none;
+        height:60px;
+        width:80%;
+        border:none;
+        resize:none;
+    }
+    .open
+    {
+        color:#fff;
+        background-color: #000;
+        margin-left: 10vh;
+        padding: 20px 50px;
+        border-radius: 10px;
+        text-align: center;
+        position:fixed;
+        text-decoration: none;
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    .main1
+    {
+        width: 100%;
+        height : 8vh;
+
+    }
+    #content
+    {
+        text-align: center;
+        align-items: center;
+
+    }
+    .main
+    {
+        border-radius: 5px;
+        background: rgb(6, 100, 100);
+        width: 90%;
+        margin-top: 10vh;
+        margin-left: 5%;
+        height: 25vh;
+
+    }
+    .paragraf
+    {
+        text-align: center;
+        text-decoration: none;
+    }
+    #ime
+    {
+        font-size: large;
+        color: #333;
+        margin-left: 50%;
+    }
+    .like
+    {
+        float: left;
+        margin-right: 4vh;
+
+    }
+    .comment
+    {
+        float: left;
+        margin-right: 5vh;
+
+    }
+
+}
